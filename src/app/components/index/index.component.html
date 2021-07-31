@@ -1,7 +1,11 @@
 <div class="container">
     <div class="bg-light p-5 rounded">
-      <h1>Navbar example</h1>
-      <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
-      <a class="btn btn-lg btn-primary" href="/docs/5.0/components/navbar/" role="button">View navbar docs »</a>
+      <h1>Test</h1>
+      <p class="lead">Test</p>
+      <button class="btn btn-lg btn-primary" (click)="metamaskButtonClick()" role="button" [disabled]="metamask_button.disabled">{{metamask_button.text}}</button>
+      <br><br>
+      <button class="btn btn-lg btn-success" (click)="getAccounts()" role="button" [disabled]="accounts_button.disabled">{{accounts_button.text}}</button>
+      <br><br>
+      <p>{{accounts}}</p>
     </div>
   </div>
